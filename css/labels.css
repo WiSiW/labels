@@ -1,0 +1,48 @@
+.labels{
+    overflow: hidden;
+    /*background-color: #f0f0f0;*/
+    margin: 0 0;
+    border: 0;
+}
+.my-label{
+    float: left;
+}
+.my-label *{
+    display: inline;
+    float: left;
+}
+.my-label .add-label{
+    width: 20px;
+    height: 20px;
+    background-color: #265a88;
+    float: right;
+    border: 0;
+    margin: 0 0;
+    padding: 0;
+}
+.my-label input{
+    width: 5px;
+    background-color: #f0f0f0;
+    border: 0;
+    margin: 0 0;
+    text-align: center;
+    padding: 2px;
+}
+.my-label button{
+    width: 15px;
+    height: 15px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    border: 0;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2px;
+}
+.label{
+    font-size: 12px;
+    background-color: #f0f0f0;
+    border: 0;
+    margin: 0 0;
+    text-align: center;
+    padding: 2px;
+}
