@@ -1,11 +1,14 @@
 var i = 1;
 function addLabels(boolean){
+    if(i>1 && (document.getElementById("label"+(i-1)).value).trim().length < 1){
+        return;
+    }
     if(boolean){
         changeTagName(i-1);
     }
     $(".my-label").append(
         "<div id='div"+ i +"'>"+
-        "<input type='text' class='label' id='label"+i+"' onkeyup='followToChange("+i+")'/>"+"<button onclick='remove(" + i + ")'>"+"&times;"+"</button>"+
+        "<input type='text' class='label' id='label"+i+"' onchange='addLabels("+true+")' onkeyup='followToChange("+i+")'/>"+"<button onclick='remove(" + i + ")'>"+"&times;"+"</button>"+
         "</div>"
     );
     document.getElementById("label"+ i).focus();
